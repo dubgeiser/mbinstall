@@ -2,6 +2,8 @@
 
 pushd `pwd`
 
+cd ~
+
 echo
 echo 'Install manually:'
 echo
@@ -23,7 +25,6 @@ ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 brew doctor
 brew update
 brew upgrade
-echo
 
 echo 'Installing base tools...'
 brew tap homebrew/dupes
@@ -56,38 +57,33 @@ sudo pear install pear.phpunit.de/PHPUnit
 ln -s /usr/local/Cellar/php54/5.4.11/bin/phpunit /usr/local/bin/
 curl -s https://getcomposer.org/composer.phar -o /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
-echo
 
 echo 'Installing Capistrano...'
 sudo gem install capistrano capistrano-ext colored
-echo
 
 echo 'Installing tilde...'
-cd ~
 git clone git@github.com:dubgeiser/tilde.git
 /bin/bash tilde/install.sh
-echo
 
 echo 'Installing vimconfig...'
-cd ~
 git clone git@github.com:dubgeiser/vimconfig.git .vim
-cd .vim
+cd ~/.vim
 git submodule init
 git submodule update
 git submodule foreach git co master
-cd bundle/powerline/
+cd ~/.vim/bundle/powerline/
 git co develop
+cd ~/.vim
 ./update
-cd ..
-ln -s .vim/vimrc ./.vimrc
-ln -s .vim/gvimrc ./.gvimrc
-echo
+cd ~
+ln -s .vim/vimrc .vimrc
+ln -s .vim/gvimrc .gvimrc
 
 echo 'Skipping dnsmasq...'
 #brew install dnsmasq
 #echo 'address=/dev/127.0.0.1' > /usr/local/etc/dnsmasq.conf
 #sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
 
+echo 'Finished'
 popd
-
 
