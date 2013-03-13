@@ -39,7 +39,7 @@ brew install asciidoc
 brew install source-highlight
 brew install tmux
 brew install tree
-echo
+brew install jsl
 
 echo 'Installing PHP...'
 brew tap josegonzalez/homebrew-php
