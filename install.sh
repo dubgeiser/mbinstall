@@ -40,6 +40,7 @@ brew install source-highlight
 brew install tmux
 brew install tree
 brew install jsl
+brew install ctags
 
 echo 'Installing PHP...'
 brew tap josegonzalez/homebrew-php
