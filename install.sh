@@ -91,7 +91,8 @@ cd ~
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 
-echo 'Skipping dnsmasq...'
+# TODO Add DNS server 127.0.0.1 automatically?
+#echo 'Installing dnsmasq, add 127.0.0.1 to your dns servers per adapter in sysprefs > networking...'
 #brew install dnsmasq
 #echo 'address=/dev/127.0.0.1' > /usr/local/etc/dnsmasq.conf
 #sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
