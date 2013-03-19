@@ -63,6 +63,13 @@ ln -s /usr/local/Cellar/php54/5.4.11/bin/phpunit /usr/local/bin/
 curl -s https://getcomposer.org/composer.phar -o /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
+echo 'Installing webgrind...'
+brew install graphviz # For generating call graphs.
+cd ~/Sites
+git clone git@github.com:dubgeiser/webgrind.git
+cd webgrind/
+git remote add upstream git://github.com/jokkedk/webgrind.git
+
 echo 'Installing Capistrano...'
 sudo gem install capistrano capistrano-ext colored
 
