@@ -30,8 +30,10 @@ brew doctor
 brew update
 brew upgrade
 
-echo 'Installing base tools...'
 brew tap homebrew/dupes
+brew tap josegonzalez/homebrew-php
+
+echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
 brew install git
 ln -s /usr/local/etc/bash_completion.d/git-completion.bash ./.git-completion.bash
@@ -47,19 +49,24 @@ brew install jsl
 brew install ctags
 
 echo 'Installing PHP...'
-brew tap josegonzalez/homebrew-php
 brew install php54  --with-mysql --with-intl --with-imap
 brew install php54-intl
 brew install php54-xdebug
-sudo pecl install oauth
-sudo pecl install apc
-sudo pear config-set auto_discover 1
-sudo pear update-channels
-sudo pear upgrade
-sudo pear channel-discover pear.phpunit.de
-sudo pear install PHP_Codesniffer
-sudo pear install pear.phpunit.de/PHPUnit
-ln -s /usr/local/Cellar/php54/5.4.11/bin/phpunit /usr/local/bin/
+brew install php54-oauth
+brew install php54-apc
+
+echo 'PEAR, play nice with the homebrew PHP...'
+chmod -R ug+w `brew --prefix php54`/lib/php
+pear config-set php_ini /usr/local/etc/php/5.4/php.ini
+pear config-set auto_discover 1
+pear update-channels
+pear upgrade
+pear channel-discover pear.phpunit.de
+pear install --alldeps pear.phpunit.de/PHPUnit PHP_Codesniffer
+brew unlink php54
+brew link php54
+echo 'If installed PEAR tools cannot be executed, add "`brew --prefix php54`/bin" to $PATH'
+
 curl -s https://getcomposer.org/composer.phar -o /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
@@ -97,6 +104,5 @@ ln -s .vim/gvimrc .gvimrc
 #echo 'address=/dev/127.0.0.1' > /usr/local/etc/dnsmasq.conf
 #sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
 
-echo 'Finished'
 popd
 
