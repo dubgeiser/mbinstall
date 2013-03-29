@@ -82,8 +82,15 @@ echo 'Installing Capistrano...'
 sudo gem install capistrano capistrano-ext colored
 
 echo 'Installing tilde...'
-git clone git@github.com:dubgeiser/tilde.git
-/bin/bash tilde/install.sh
+cd ~
+rm -f .bashrc
+rm -f .bash_profile
+rm -f .gitconfig
+rm -f .inputrc
+rm -f .tmux.conf
+git init
+git remote add origin git@github.com:dubgeiser/tilde.git
+git pull origin master && git fetch
 
 echo 'Installing vimconfig...'
 git clone git@github.com:dubgeiser/vimconfig.git .vim
