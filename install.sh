@@ -7,6 +7,7 @@ cd ~
 echo
 echo 'Install manually:'
 echo
+echo '    - Quicksilver https://qsapp.com/'
 echo '    - Command line tools for Xcode: https://developer.apple.com/downloads/'
 echo '    - Fire Fox: http://www.mozilla.org/en-US/firefox/new/'
 echo '        - Last pass: https://lastpass.com/'
