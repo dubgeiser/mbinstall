@@ -37,7 +37,6 @@ brew tap josegonzalez/homebrew-php
 echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
 brew install git
-ln -s /usr/local/etc/bash_completion.d/git-completion.bash ./.git-completion.bash
 brew install wget
 brew install nmap
 brew install ack
