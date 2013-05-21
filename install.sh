@@ -105,11 +105,14 @@ cd ~
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 
-# TODO Add DNS server 127.0.0.1 automatically?
-#echo 'Installing dnsmasq, add 127.0.0.1 to your dns servers per adapter in sysprefs > networking...'
-#brew install dnsmasq
-#echo 'address=/dev/127.0.0.1' > /usr/local/etc/dnsmasq.conf
-#sudo launchctl load /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+# POW dynamic dns
+# http://pow.cx/
+# THIS SHOULD BE DONE BEFORE INSTALL
+# echo 'export POW_DST_PORT=81' >> ~/.powconfig
+# (I'm putting this into my tilde /.powconfig, so tilde should be installed
+# before pow.)
+# Uninstall Pow: curl get.pow.cx/uninstall.sh | sh
+curl get.pow.cx | sh
 
 popd
 
