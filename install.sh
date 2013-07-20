@@ -62,7 +62,7 @@ pear config-set auto_discover 1
 pear update-channels
 pear upgrade
 pear channel-discover pear.phpunit.de
-pear install --alldeps pear.phpunit.de/PHPUnit PHP_Codesniffer
+pear install --alldeps phpunit/phpunit PHP_Codesniffer
 brew unlink php54
 brew link php54
 echo 'If installed PEAR tools cannot be executed, add "`brew --prefix php54`/bin" to $PATH'
