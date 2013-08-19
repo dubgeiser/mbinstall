@@ -93,6 +93,7 @@ rm -f .tmux.conf
 git init
 git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
+sudo ln -s ~/bin/wifionoff.sh /usr/bin/wifionoff
 
 echo 'Installing vimconfig...'
 git clone git@github.com:dubgeiser/vimconfig.git .vim
@@ -116,6 +117,7 @@ ln -s .vim/gvimrc .gvimrc
 # before pow.)
 # Uninstall Pow: curl get.pow.cx/uninstall.sh | sh
 curl get.pow.cx | sh
+
 
 popd
 
