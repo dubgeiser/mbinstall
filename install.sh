@@ -22,6 +22,7 @@ echo '    - iTerm2: http://www.iterm2.com  (http://code.google.com/p/iterm2/down
 echo '    - CoconutBattery: http://www.coconut-flavour.com/coconutbattery/'
 echo '    - DropBox: https://www.dropbox.com/'
 echo '    - SizeUp: http://www.irradiatedsoftware.com/sizeup/'
+echo '    - LittleIpsum: http://littleipsum.com/'
 echo
 echo 'Make sure all versions in the file paths and package names are still'
 echo 'correct and up to date.'
