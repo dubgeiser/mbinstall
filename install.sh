@@ -58,6 +58,7 @@ brew install php54-intl
 brew install php54-xdebug
 brew install php54-oauth
 brew install php54-apc
+brew install elasticsearch
 
 echo 'PEAR, play nice with the homebrew PHP...'
 chmod -R ug+w `brew --prefix php54`/lib/php
