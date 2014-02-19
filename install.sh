@@ -23,6 +23,7 @@ echo '    - CoconutBattery: http://www.coconut-flavour.com/coconutbattery/'
 echo '    - DropBox: https://www.dropbox.com/'
 echo '    - SizeUp: http://www.irradiatedsoftware.com/sizeup/'
 echo '    - LittleIpsum: http://littleipsum.com/'
+echo '    - Vagrant: http://www.vagrantup.com/downloads.html'
 echo
 echo 'Make sure all versions in the file paths and package names are still'
 echo 'correct and up to date.'
@@ -52,13 +53,19 @@ brew install tree
 brew install jsl
 brew install ctags
 
+# TODO with more and more usage of sneakers, I imagine this may go.
+brew install elasticsearch
+
 echo 'Installing PHP...'
 brew install php54  --with-mysql --with-intl --with-imap
 brew install php54-intl
 brew install php54-xdebug
 brew install php54-oauth
 brew install php54-apc
-brew install elasticsearch
+
+echo 'Install PHP tooling...'
+brew install phploc
+brew install phpmd
 
 echo 'PEAR, play nice with the homebrew PHP...'
 chmod -R ug+w `brew --prefix php54`/lib/php
