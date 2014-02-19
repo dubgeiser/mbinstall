@@ -103,9 +103,6 @@ cd ~/.vim
 git submodule init
 git submodule update
 git submodule foreach git co master
-cd ~/.vim/bundle/powerline/
-git co develop
-cd ~/.vim
 ./update
 cd ~
 ln -s .vim/vimrc .vimrc
