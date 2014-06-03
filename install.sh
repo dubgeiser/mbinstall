@@ -37,6 +37,7 @@ brew update
 brew upgrade
 
 brew tap homebrew/dupes
+brew tap homebrew/versions
 brew tap homebrew/homebrew-php
 
 echo 'Installing base tools...'
