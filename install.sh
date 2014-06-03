@@ -37,7 +37,7 @@ brew update
 brew upgrade
 
 brew tap homebrew/dupes
-brew tap josegonzalez/homebrew-php
+brew tap homebrew/homebrew-php
 
 echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
