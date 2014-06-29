@@ -53,6 +53,7 @@ brew install tmux
 brew install tree
 brew install jsl
 brew install ctags
+brew install archey
 
 # TODO with more and more usage of sneakers, I imagine this may go.
 brew install elasticsearch
