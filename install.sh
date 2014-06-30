@@ -7,26 +7,20 @@ cd ~
 echo
 echo 'Install manually:'
 echo
-echo '    - Quicksilver https://qsapp.com/'
+
+echo 'NOT YET AVAILABLE in brew caske, install manually:'
+
+            # TODO Better full XCode => brew install macvim needs it.
 echo '    - Command line tools for Xcode: https://developer.apple.com/downloads/'
-echo '    - Fire Fox: http://www.mozilla.org/en-US/firefox/new/'
-echo '        - Last pass: https://lastpass.com/'
+
+echo '    - Mysql: http://www.mysql.com/downloads/mysql/'
+echo '    - MacVim: https://github.com/b4winckler/macvim/downloads'
+
+echo ' Firefox: '
 echo '        - Xmarks: http://www.xmarks.com/'
-echo '        - FireBug: http://getfirebug.com/'
 echo '        - Ad blocker plus: https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/'
 echo '        - Ghostery: https://addons.mozilla.org/en-US/firefox/addon/ghostery/'
 echo
-echo '    - Mysql: http://www.mysql.com/downloads/mysql/'
-echo '    - MacVim: https://github.com/b4winckler/macvim/downloads'
-echo '    - iTerm2: http://www.iterm2.com  (http://code.google.com/p/iterm2/downloads/list)'
-echo '    - CoconutBattery: http://www.coconut-flavour.com/coconutbattery/'
-echo '    - DropBox: https://www.dropbox.com/'
-echo '    - SizeUp: http://www.irradiatedsoftware.com/sizeup/'
-echo '    - LittleIpsum: http://littleipsum.com/'
-echo '    - Vagrant: http://www.vagrantup.com/downloads.html'
-echo
-echo 'Make sure all versions in the file paths and package names are still'
-echo 'correct and up to date.'
 read -p 'ENTER to continue...'
 echo
 
@@ -39,6 +33,21 @@ brew upgrade
 brew tap homebrew/dupes
 brew tap homebrew/versions
 brew tap homebrew/homebrew-php
+
+echo 'Installing Homebrew cask...'
+# http://caskroom.io/
+brew install caskroom/cask/brew-cask
+
+brew cask install firefox
+brew cask install lastpass-universal
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install quicksilver
+brew cask install iterm2
+brew cask install dropbox
+brew cask install littleipsum
+brew cask install coconutbattery
+brew cask install sizeup
 
 echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
