@@ -135,6 +135,8 @@ ln -s .vim/gvimrc .gvimrc
 # Uninstall Pow: curl get.pow.cx/uninstall.sh | sh
 curl get.pow.cx | sh
 
+cd ~
+git clone git@bitbucket.org:dubgeiser/documents.git Documents
 
 popd
 
