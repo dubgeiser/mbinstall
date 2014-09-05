@@ -77,6 +77,7 @@ brew install php54-apc
 echo 'Install PHP tooling...'
 brew install phploc
 brew install phpmd
+brew install pdepend
 
 echo 'PEAR, play nice with the homebrew PHP...'
 chmod -R ug+w `brew --prefix php54`/lib/php
