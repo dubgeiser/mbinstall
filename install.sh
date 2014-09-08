@@ -78,6 +78,7 @@ echo 'Install PHP tooling...'
 brew install phploc
 brew install phpmd
 brew install pdepend
+brew install phpunit
 
 echo 'PEAR, play nice with the homebrew PHP...'
 chmod -R ug+w `brew --prefix php54`/lib/php
@@ -85,8 +86,6 @@ pear config-set php_ini /usr/local/etc/php/5.4/php.ini
 pear config-set auto_discover 1
 pear update-channels
 pear upgrade
-pear channel-discover pear.phpunit.de
-pear install --alldeps phpunit/phpunit PHP_Codesniffer
 brew unlink php54
 brew link php54
 echo 'If installed PEAR tools cannot be executed, add "`brew --prefix php54`/bin" to $PATH'
