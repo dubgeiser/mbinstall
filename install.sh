@@ -11,6 +11,12 @@ echo
 echo 'NOT YET AVAILABLE in brew caske, install manually:'
 
             # TODO Better full XCode => brew install macvim needs it.
+            # XXX 2014-09-10 brew macvim and brew cask macvim are still behind
+            #     the 'normal' MacVim distro, so for now, install it manually.
+            #     But might consider shell vim only now since font rendering
+            #     seems to be OK now (note: might be due to change of color
+            #     scheme which might be more forgiving).
+            #     Also, vim has more recent versions than macvim... TBC/D
 echo '    - Command line tools for Xcode: https://developer.apple.com/downloads/'
 
 echo '    - Mysql: http://www.mysql.com/downloads/mysql/'
