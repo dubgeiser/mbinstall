@@ -54,6 +54,7 @@ brew cask install dropbox
 brew cask install littleipsum
 brew cask install coconutbattery
 brew cask install sizeup
+brew cask install the-unarchiver
 
 echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
