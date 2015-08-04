@@ -74,6 +74,7 @@ brew install archey
 # TODO with more and more usage of sneakers, I imagine this may go.
 brew install elasticsearch
 
+# TODO Use Liip?
 echo 'Installing PHP...'
 brew install php54  --with-mysql --with-intl --with-imap
 brew install php54-intl
@@ -85,7 +86,12 @@ echo 'Install PHP tooling...'
 brew install phploc
 brew install phpmd
 brew install pdepend
-brew install phpunit
+
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+mv phpunit.phar /usr/local/bin/phpunit
+phpunit --version
+phpunit Tests/Unit/Shortcuts/SetMetaFromRecordTest.php
 
 echo 'PEAR, play nice with the homebrew PHP...'
 chmod -R ug+w `brew --prefix php54`/lib/php
