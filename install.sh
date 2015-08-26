@@ -8,7 +8,7 @@ echo
 echo 'Install manually:'
 echo
 
-echo 'NOT YET AVAILABLE in brew caske, install manually:'
+echo 'NOT YET AVAILABLE in brew cask, install manually:'
 
             # TODO Better full XCode => brew install macvim needs it.
             # XXX 2014-09-10 brew macvim and brew cask macvim are still behind
@@ -55,6 +55,7 @@ brew cask install littleipsum
 brew cask install coconutbattery
 brew cask install sizeup
 brew cask install the-unarchiver
+brew cask install processing
 
 echo 'Installing base tools...'
 brew install autoconf automake apple-gcc42
