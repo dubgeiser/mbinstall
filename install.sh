@@ -9,7 +9,6 @@ echo 'Install manually:'
 echo
 
 echo '    - Xcode, see the AppStore'
-echo '    - Mysql: http://www.mysql.com/downloads/mysql/'
 echo '    - PHP: https://php-osx.liip.ch/'
 
 echo ' Firefox: '
@@ -44,6 +43,12 @@ brew install tree
 brew install jsl
 brew install ctags
 brew install archey
+
+# Mysql
+# Mariadb is drop-in replacement, also used by default on Openminds servers
+brew install mariadb
+brew services start mariadb
+brew cask install sequel-pro
 
 wget https://phar.phpunit.de/phpunit.phar
 chmod +x phpunit.phar
