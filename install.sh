@@ -79,7 +79,8 @@ git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
 sudo ln -s ~/bin/wifionoff.sh /usr/bin/wifionoff
 
-echo 'Installing vimconfig...'
+echo 'Installing Vim...'
+brew install macvim --override-system-vim
 git clone git@github.com:dubgeiser/vimconfig.git .vim
 cd ~/.vim
 git submodule init
