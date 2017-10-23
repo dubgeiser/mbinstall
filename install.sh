@@ -77,17 +77,10 @@ git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
 sudo ln -s ~/bin/wifionoff.sh /usr/bin/wifionoff
 
-echo 'Installing Vim...'
+echo 'Setting up Vim...'
 brew install macvim --override-system-vim
 git clone git@github.com:dubgeiser/vimconfig.git .vim
-cd ~/.vim
-git submodule init
-git submodule update
-git submodule foreach git co master
-./update
-cd ~
-ln -s .vim/vimrc .vimrc
-ln -s .vim/gvimrc .gvimrc
+~/.vim/install
 
 # POW dynamic dns
 # http://pow.cx/
