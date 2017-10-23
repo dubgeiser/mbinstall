@@ -6,11 +6,9 @@ cd ~
 
 echo
 echo 'Install manually:'
-echo
-
 echo '    - Xcode, see the AppStore'
 echo '    - PHP: https://php-osx.liip.ch/'
-
+echo
 echo ' Firefox: '
 echo '        - Ad blocker plus: https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/'
 echo '        - Ghostery: https://addons.mozilla.org/en-US/firefox/addon/ghostery/'
