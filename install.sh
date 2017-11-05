@@ -75,7 +75,6 @@ rm -f .tmux.conf
 git init
 git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
-sudo ln -s ~/bin/wifionoff.sh /usr/bin/wifionoff
 
 echo 'Setting up Vim...'
 brew install macvim --override-system-vim
