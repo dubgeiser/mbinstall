@@ -41,6 +41,11 @@ brew install tree
 brew install jsl
 brew install ctags
 brew install archey
+brew install ag
+brew install figlet
+brew install ngrep
+brew install fzf
+/usr/local/opt/fzf/install --all
 
 # Mysql
 # Mariadb is drop-in replacement, also used by default on Openminds servers
