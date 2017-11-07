@@ -22,15 +22,6 @@ brew doctor
 brew update
 brew upgrade
 
-brew cask install firefox
-brew cask install lastpass-universal
-brew cask install virtualbox
-brew cask install vagrant
-brew cask install iterm2
-brew cask install dropbox
-brew cask install sizeup
-
-echo 'Installing base tools...'
 brew install git
 brew install wget
 brew install nmap
@@ -46,6 +37,19 @@ brew install figlet
 brew install ngrep
 brew install fzf
 /usr/local/opt/fzf/install --all
+brew install openssl
+brew cask install firefox
+brew cask install lastpass-universal
+brew cask install virtualbox
+brew cask install vagrant
+brew cask install iterm2
+brew cask install dropbox
+brew cask install sizeup
+brew cask install chefdk
+
+# echo 'Installing MacTex distribution'
+# echo 'This will take a long time and eats gigabytes of diskspace.'
+# brew cask install mactex
 
 # Mysql
 # Mariadb is drop-in replacement, also used by default on Openminds servers
