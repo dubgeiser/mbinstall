@@ -38,6 +38,9 @@ brew install ngrep
 brew install fzf
 /usr/local/opt/fzf/install --all
 brew install openssl
+brew install htop
+brew install erlang
+brew install jq
 brew cask install firefox
 brew cask install lastpass-universal
 brew cask install virtualbox
