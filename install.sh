@@ -74,9 +74,6 @@ git clone git@github.com:dubgeiser/webgrind.git
 cd webgrind/
 git remote add upstream git://github.com/jokkedk/webgrind.git
 
-echo 'Installing Capistrano...'
-sudo gem install capistrano capistrano-ext colored
-
 echo 'Installing tilde...'
 cd ~
 rm -f .bashrc
