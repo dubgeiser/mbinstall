@@ -22,7 +22,11 @@ brew doctor
 brew update
 brew upgrade
 
+# Use a newer Bash as login shell
 brew install bash
+echo '/usr/local/bin/bash' | sudo tee -a /etc/shells > /dev/null
+chsh -s /usr/local/bin/bash
+
 brew install git
 brew install wget
 brew install nmap
