@@ -22,6 +22,7 @@ brew doctor
 brew update
 brew upgrade
 
+brew install bash
 brew install git
 brew install wget
 brew install nmap
@@ -41,6 +42,10 @@ brew install openssl
 brew install htop
 brew install erlang
 brew install jq
+brew install gnu-sed
+brew install gnupg
+brew install sqlite
+brew install lorem
 brew cask install firefox
 brew cask install lastpass-universal
 brew cask install virtualbox
@@ -49,6 +54,9 @@ brew cask install iterm2
 brew cask install dropbox
 brew cask install sizeup
 brew cask install chefdk
+brew cask install java
+
+brew install --with-plugins jmeter
 
 # echo 'Installing MacTex distribution'
 # echo 'This will take a long time and eats gigabytes of diskspace.'
