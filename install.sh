@@ -54,7 +54,7 @@ brew cask install firefox
 brew cask install lastpass-universal
 brew cask install virtualbox
 brew cask install vagrant
-brew cask install iterm2
+brew cask install iterm2-beta
 brew cask install dropbox
 brew cask install sizeup
 brew cask install chefdk
