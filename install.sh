@@ -59,6 +59,7 @@ brew cask install dropbox
 brew cask install sizeup
 brew cask install chefdk
 brew cask install java
+brew cask install keepassxc
 
 brew install --with-plugins jmeter
 
