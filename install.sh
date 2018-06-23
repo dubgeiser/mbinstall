@@ -60,6 +60,7 @@ brew cask install sizeup
 brew cask install chefdk
 brew cask install java
 brew cask install keepassxc
+brew cask install krita
 
 brew install --with-plugins jmeter
 
