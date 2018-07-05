@@ -50,6 +50,7 @@ brew install gnu-sed
 brew install gnupg
 brew install sqlite
 brew install lorem
+brew install ansible ansible-lint
 brew cask install firefox
 brew cask install lastpass-universal
 brew cask install virtualbox
