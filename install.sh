@@ -77,12 +77,10 @@ brew install mariadb
 brew services start mariadb
 brew cask install sequel-pro
 
-wget https://phar.phpunit.de/phpunit.phar
-chmod +x phpunit.phar
-mv phpunit.phar /usr/local/bin/phpunit
-
 curl -s https://getcomposer.org/composer.phar -o /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
+
+/usr/local/bin/composer global require phpunit/phpunit
 
 echo 'Installing webgrind...'
 brew install graphviz # For generating call graphs.
