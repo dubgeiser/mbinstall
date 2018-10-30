@@ -5,7 +5,7 @@ pushd `pwd`
 cd ~
 
 echo
-echo 'Install manually:'
+echo 'Install manually (BEFORE CONTINUING WITH THE INSTALL):'
 echo '    - Xcode, see the AppStore'
 echo '    - PHP: https://php-osx.liip.ch/'
 echo
