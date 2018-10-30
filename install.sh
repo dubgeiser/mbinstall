@@ -80,7 +80,7 @@ brew cask install sequel-pro
 curl -s https://getcomposer.org/composer.phar -o /usr/local/bin/composer
 chmod +x /usr/local/bin/composer
 
-/usr/local/bin/composer global require phpunit/phpunit
+/usr/local/bin/composer global require phpunit/phpunit '*'
 
 echo 'Installing webgrind...'
 brew install graphviz # For generating call graphs.
