@@ -9,9 +9,9 @@ echo 'Install manually (BEFORE CONTINUING WITH THE INSTALL):'
 echo '    - Xcode, see the AppStore'
 echo '    - PHP: https://php-osx.liip.ch/'
 echo
-echo ' Firefox: '
-echo '        - Ad blocker plus: https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/'
-echo '        - Ghostery: https://addons.mozilla.org/en-US/firefox/addon/ghostery/'
+echo ' Firefox (after install is done): '
+echo '        - Ublock: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/'
+echo '        - Moo Later: https://addons.mozilla.org/en-US/firefox/addon/moo-later/'
 echo
 read -p 'ENTER to continue...'
 echo
