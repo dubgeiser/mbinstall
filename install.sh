@@ -37,7 +37,7 @@ brew install tree
 brew install jsl
 brew install ctags
 brew install archey
-brew install ag
+brew install the_silver_searcher
 brew install figlet
 brew install ngrep
 brew install fzf
@@ -53,8 +53,10 @@ brew install lorem
 brew install ansible ansible-lint
 brew cask install firefox
 brew cask install lastpass-universal
-brew cask install virtualbox
+brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
+brew cask install vlc
+brew cask install wireshark
 brew cask install iterm2-beta
 brew cask install dropbox
 brew cask install sizeup
