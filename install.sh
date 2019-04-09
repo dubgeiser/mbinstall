@@ -36,7 +36,6 @@ brew install tmux
 brew install tree
 brew install jsl
 brew install ctags
-brew install archey
 brew install the_silver_searcher
 brew install figlet
 brew install ngrep
@@ -52,7 +51,6 @@ brew install sqlite
 brew install lorem
 brew install ansible ansible-lint
 brew cask install firefox
-brew cask install lastpass-universal
 brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
 brew cask install vlc
@@ -124,4 +122,3 @@ cd ~
 git clone git@bitbucket.org:dubgeiser/documents.git Documents
 
 popd
-
