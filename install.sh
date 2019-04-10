@@ -32,6 +32,7 @@ brew install wget
 brew install nmap
 brew install ack
 brew install sloccount
+brew install asciidoctor
 brew install tmux
 brew install tree
 brew install jsl
