@@ -52,6 +52,7 @@ brew install sqlite
 brew install lorem
 brew install ansible ansible-lint
 brew install shellcheck shfmt
+brew install pando
 brew cask install firefox
 brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
