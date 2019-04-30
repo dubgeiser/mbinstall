@@ -96,6 +96,8 @@ cd ~/Sites
 git clone git@github.com:dubgeiser/webgrind.git
 cd webgrind/
 git remote add upstream git://github.com/jokkedk/webgrind.git
+git pull upstream master
+git push origin master
 
 echo 'Installing tilde...'
 cd ~
