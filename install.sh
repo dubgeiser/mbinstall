@@ -55,6 +55,7 @@ brew install shellcheck shfmt
 brew install pando
 brew install gource
 brew install gnuplot
+brew install entr
 brew cask install firefox
 brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
