@@ -127,8 +127,6 @@ git clone git@github.com:dubgeiser/vimconfig.git .vim
 curl get.pow.cx | sh
 
 cd ~
-git clone git@bitbucket.org:dubgeiser/documents.git Documents
-
 sudo gem install asciidoctor-pdf
 
 popd
