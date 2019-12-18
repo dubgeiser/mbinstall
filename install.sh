@@ -61,7 +61,6 @@ brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
 brew cask install vlc
 brew cask install wireshark
-brew cask install iterm2-beta
 brew cask install dropbox
 brew cask install sizeup
 brew cask install chefdk
