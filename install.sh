@@ -56,6 +56,7 @@ brew install pando
 brew install gource
 brew install gnuplot
 brew install entr
+brew install python3
 brew cask install firefox
 brew cask install virtualbox virtualbox-extension-pack
 brew cask install vagrant
@@ -69,6 +70,9 @@ brew cask install krita
 brew cask install flux
 brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
+
+# Need this for Neovim to support Python 3.
+python3 -m pip install --user --upgrade pynvim
 
 brew install --with-plugins jmeter
 
