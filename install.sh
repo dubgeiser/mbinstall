@@ -31,7 +31,7 @@ brew install git
 brew install wget
 brew install nmap
 brew install ack
-brew install sloccount
+brew install scc
 brew install asciidoc
 brew install tmux
 brew install tree
