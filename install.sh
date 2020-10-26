@@ -115,8 +115,8 @@ git init
 git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
 
-echo 'Setting up Vim...'
-brew install macvim --override-system-vim
+echo 'Setting up Neovim...'
+brew install neovim
 git clone git@github.com:dubgeiser/vimconfig.git .vim
 ~/.vim/install
 
