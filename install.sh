@@ -67,7 +67,6 @@ brew cask install sizeup
 brew cask install chefdk
 brew cask install java
 brew cask install krita
-brew cask install flux
 brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
 
