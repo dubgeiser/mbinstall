@@ -92,7 +92,6 @@ chmod +x /usr/local/bin/composer
 /usr/local/bin/composer global require squizlabs/php_codesniffer '*'
 /usr/local/bin/composer global require phpmd/phpmd '*'
 /usr/local/bin/composer global require phpstan/phpstan-shim '*'
-/usr/local/bin/composer global require hirak/prestissimo '*'
 /usr/local/bin/composer global require phpunit/phpunit '*'
 
 echo 'Installing webgrind...'
