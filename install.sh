@@ -71,9 +71,6 @@ brew cask install krita
 brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
 
-# Need this for Neovim to support Python 3.
-python3 -m pip install --user --upgrade pynvim
-
 brew install --with-plugins jmeter
 
 # echo 'Installing MacTex distribution'
@@ -108,11 +105,13 @@ rm -f .tmux.conf
 git init
 git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
+git submodule update --init
 
-echo 'Setting up Neovim...'
+echo 'Setting up Neovim... config is a submodule of tilde'
 brew install neovim
-git clone git@github.com:dubgeiser/vimconfig.git .vim
-~/.vim/install
+
+# Need this for Neovim to support Python 3.
+python3 -m pip install --user --upgrade pynvim
 
 # POW dynamic dns
 # http://pow.cx/
