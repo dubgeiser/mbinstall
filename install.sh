@@ -71,6 +71,7 @@ brew cask install krita
 brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
 brew install font-iosevka
+brew install kitty
 
 brew install --with-plugins jmeter
 
