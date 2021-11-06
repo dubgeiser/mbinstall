@@ -78,6 +78,7 @@ brew install --with-plugins jmeter
 
 brew install npm bower
 npm install -g yarn
+
 # echo 'Installing MacTex distribution'
 # echo 'This will take a long time and eats gigabytes of diskspace.'
 # brew cask install mactex
@@ -122,6 +123,7 @@ python3 -m pip install --user --upgrade pynvim
 echo 'Setup language servers for LSP in Neovim.'
 npm install -g pyright
 npm install -g intelephense
+yarn global add ansible-language-server
 
 # TODO I _think_ this can be deleted, but not 100% sure anymore :-|
 # POW dynamic dns
