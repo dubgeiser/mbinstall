@@ -117,6 +117,10 @@ git clone git@github.com:dubgeiser/vimconfig.git .config/nvim
 # Need this for Neovim to support Python 3.
 python3 -m pip install --user --upgrade pynvim
 
+echo 'Setup language servers for LSP in Neovim.'
+npm install -g pyright
+npm install -g intelephense
+
 # TODO I _think_ this can be deleted, but not 100% sure anymore :-|
 # POW dynamic dns
 # http://pow.cx/
