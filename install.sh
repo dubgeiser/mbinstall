@@ -108,10 +108,11 @@ rm -f .tmux.conf
 git init
 git remote add origin git@github.com:dubgeiser/tilde.git
 git pull origin master && git fetch
-git submodule update --init
 
-echo 'Setting up Neovim... config is a submodule of tilde'
+echo 'Setting up Neovim...'
+echo 'Plugins should be installed first time Neovim is started.'
 brew install neovim
+git clone git@github.com:dubgeiser/vimconfig.git .config/nvim
 
 # Need this for Neovim to support Python 3.
 python3 -m pip install --user --upgrade pynvim
