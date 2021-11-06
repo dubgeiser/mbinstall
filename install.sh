@@ -76,6 +76,8 @@ brew install kitty
 
 brew install --with-plugins jmeter
 
+brew install npm bower
+npm install -g yarn
 # echo 'Installing MacTex distribution'
 # echo 'This will take a long time and eats gigabytes of diskspace.'
 # brew cask install mactex
