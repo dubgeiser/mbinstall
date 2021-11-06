@@ -117,6 +117,7 @@ git clone git@github.com:dubgeiser/vimconfig.git .config/nvim
 # Need this for Neovim to support Python 3.
 python3 -m pip install --user --upgrade pynvim
 
+# TODO I _think_ this can be deleted, but not 100% sure anymore :-|
 # POW dynamic dns
 # http://pow.cx/
 # THIS SHOULD BE DONE BEFORE INSTALL
@@ -124,7 +125,7 @@ python3 -m pip install --user --upgrade pynvim
 # (I'm putting this into my tilde /.powconfig, so tilde should be installed
 # before pow.)
 # Uninstall Pow: curl get.pow.cx/uninstall.sh | sh
-curl get.pow.cx | sh
+# curl get.pow.cx | sh
 
 cd ~
 sudo gem install asciidoctor-pdf
