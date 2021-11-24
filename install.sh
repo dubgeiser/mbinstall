@@ -31,14 +31,13 @@ brew install starship
 brew install git
 brew install wget
 brew install nmap
-brew install ack
 brew install scc
 brew install asciidoc
 brew install tmux
 brew install tree
 brew install jsl
 brew install ctags
-brew install the_silver_searcher
+brew install ripgrep
 brew install figlet
 brew install ngrep
 brew install fzf
