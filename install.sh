@@ -69,12 +69,9 @@ brew cask install java
 brew cask install krita
 brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
-brew install font-iosevka
 brew install font-iosevka-nerd-font
 brew install kitty
-
 brew install --with-plugins jmeter
-
 brew install npm bower
 npm install -g yarn
 
