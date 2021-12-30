@@ -64,7 +64,6 @@ brew cask install vlc
 brew cask install wireshark
 brew cask install dropbox
 brew cask install sizeup
-brew cask install chefdk
 brew cask install java
 brew cask install krita
 brew tap homebrew/cask-fonts
