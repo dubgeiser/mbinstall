@@ -52,7 +52,7 @@ brew install sqlite
 brew install lorem
 brew install ansible ansible-lint
 brew install shellcheck shfmt
-brew install pando
+brew install pandoc
 brew install gource
 brew install gnuplot
 brew install entr
