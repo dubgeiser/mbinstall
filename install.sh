@@ -4,6 +4,8 @@ pushd `pwd`
 
 cd ~
 
+mkdir -p ~/Projects
+
 echo
 echo 'Install manually (BEFORE CONTINUING WITH THE INSTALL):'
 echo '    - Xcode, see the AppStore'
@@ -70,6 +72,7 @@ brew tap homebrew/cask-fonts
 brew cask install font-ibm-plex
 brew install font-iosevka-nerd-font
 brew install kitty
+brew install stow
 brew install --with-plugins jmeter
 brew install npm bower
 npm install -g yarn
@@ -103,9 +106,12 @@ rm -f .bash_profile
 rm -f .gitconfig
 rm -f .inputrc
 rm -f .tmux.conf
-git init
-git remote add origin git@github.com:dubgeiser/tilde.git
-git pull origin master && git fetch
+cd ~/Projects/
+git clone git@github.com:dubgeiser/tilde.git
+cd tilde
+./install
+cd ../../
+
 
 echo 'Setting up Neovim...'
 echo 'Plugins should be installed first time Neovim is started.'
