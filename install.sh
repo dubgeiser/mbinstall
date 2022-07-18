@@ -73,6 +73,8 @@ brew cask install font-ibm-plex
 brew install font-iosevka-nerd-font
 brew install kitty
 brew install stow
+brew install fd
+
 brew install --with-plugins jmeter
 brew install npm bower
 npm install -g yarn
