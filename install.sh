@@ -77,6 +77,7 @@ brew install fd
 
 brew install --with-plugins jmeter
 brew install npm bower
+brew install nvm
 npm install -g yarn
 
 # echo 'Installing MacTex distribution'
