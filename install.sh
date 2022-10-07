@@ -8,21 +8,13 @@ mkdir -p ~/Projects
 
 echo
 echo 'Install manually (BEFORE CONTINUING WITH THE INSTALL):'
-echo '    - Xcode, see the AppStore'
-echo '    - PHP: https://php-osx.liip.ch/'
 echo
-echo ' Firefox (after install is done): '
-echo '        - Ublock: https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/'
-echo '        - Moo Later: https://addons.mozilla.org/en-US/firefox/addon/moo-later/'
+echo 'Firefox with lastpass and Ublock'
+echo
+echo 'Homebrew, see their website'
 echo
 read -p 'ENTER to continue...'
 echo
-
-echo 'Installing Homebrew...'
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-brew doctor
-brew update
-brew upgrade
 
 # Use a newer Bash as login shell
 brew install bash
@@ -59,17 +51,16 @@ brew install gource
 brew install gnuplot
 brew install entr
 brew install python3
-brew cask install firefox
-brew cask install virtualbox virtualbox-extension-pack
-brew cask install vagrant
-brew cask install vlc
-brew cask install wireshark
-brew cask install dropbox
-brew cask install sizeup
-brew cask install java
-brew cask install krita
+brew install virtualbox virtualbox-extension-pack
+brew install vagrant
+brew install vlc
+brew install wireshark
+brew install dropbox
+brew install sizeup
+brew install java
+
 brew tap homebrew/cask-fonts
-brew cask install font-ibm-plex
+brew install font-ibm-plex
 brew install font-iosevka-nerd-font
 brew install kitty
 brew install stow
@@ -125,6 +116,7 @@ git clone git@github.com:dubgeiser/vimconfig.git .config/nvim
 python3 -m pip install --user --upgrade pynvim
 
 echo 'Setup language servers for LSP in Neovim.'
+brew install lua-language-server
 npm install -g pyright
 npm install -g intelephense
 yarn global add ansible-language-server
