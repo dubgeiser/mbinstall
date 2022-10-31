@@ -121,16 +121,6 @@ npm install -g pyright
 npm install -g intelephense
 yarn global add ansible-language-server
 
-# TODO I _think_ this can be deleted, but not 100% sure anymore :-|
-# POW dynamic dns
-# http://pow.cx/
-# THIS SHOULD BE DONE BEFORE INSTALL
-# echo 'export POW_DST_PORT=81' >> ~/.powconfig
-# (I'm putting this into my tilde /.powconfig, so tilde should be installed
-# before pow.)
-# Uninstall Pow: curl get.pow.cx/uninstall.sh | sh
-# curl get.pow.cx | sh
-
 cd ~
 sudo gem install asciidoctor-pdf
 
