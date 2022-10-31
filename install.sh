@@ -109,7 +109,7 @@ cd ../../
 
 echo 'Setting up Neovim...'
 echo 'Plugins should be installed first time Neovim is started.'
-brew install neovim
+brew install --HEAD neovim
 git clone git@github.com:dubgeiser/vimconfig.git .config/nvim
 
 # Need this for Neovim to support Python 3.
