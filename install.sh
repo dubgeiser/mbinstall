@@ -41,6 +41,7 @@ brew install htop
 brew install erlang
 brew install jq
 brew install gnu-sed
+brew install gpatch
 brew install gnupg
 brew install sqlite
 brew install lorem
