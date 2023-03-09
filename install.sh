@@ -117,9 +117,9 @@ python3 -m pip install --user --upgrade pynvim
 
 echo 'Setup language servers for LSP in Neovim.'
 brew install lua-language-server
+brew install ansible-language-server
 npm install -g pyright
 npm install -g intelephense
-yarn global add ansible-language-server
 
 cd ~
 sudo gem install asciidoctor-pdf
