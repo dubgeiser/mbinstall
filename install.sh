@@ -61,8 +61,9 @@ brew install sizeup
 brew install java
 
 brew tap homebrew/cask-fonts
+brew install font-symbols-only-nerd-font
 brew install font-ibm-plex
-brew install font-iosevka-nerd-font
+brew install font-iosevka
 brew install kitty
 brew install stow
 brew install fd
