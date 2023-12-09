@@ -23,6 +23,7 @@ chsh -s /usr/local/bin/bash
 
 brew install starship
 brew install git
+brew install git-delta
 brew install wget
 brew install nmap
 brew install scc
