@@ -41,6 +41,7 @@ brew install openssl
 brew install htop
 brew install erlang
 brew install jq
+brew install jp2a
 brew install gnu-sed
 brew install gpatch
 brew install gnupg
